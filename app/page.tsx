@@ -95,7 +95,7 @@ const StockGapScanner = () => {
           }
           
           // Rate limiting - respect Polygon's 5 calls/second limit
-          await new Promise(resolve => setTimeout(resolve, 220));
+          await new Promise(resolve => setTimeout(resolve, 12500));
           
         } catch (stockError) {
           console.error(`Error fetching data for ${symbol}:`, stockError);
